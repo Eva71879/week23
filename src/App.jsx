@@ -1,10 +1,7 @@
-import './App.css'
-import Card from './components/Card'
+import './App.scss'
 import CardList from './components/CardList'
 
 function App() {
-  
-
   return (
     <div className="app">
       <CardList/>
