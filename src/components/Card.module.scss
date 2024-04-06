@@ -5,17 +5,20 @@
   flex-direction: column;  
   width: calc(160px + 3%);
   height: 251px;
+  cursor: pointer;
   border-left: 1px solid white;
   border-right: 1px solid white;
+  transition: all 0.3s ease-in-out;//как сделать, чтобы работал?
 }
 
 .bigger {
     transform: scale(1.06);
     z-index: 1;
     width: calc(160px + 3%);
-    transition: width 0.6s ease, transform 0.6s ease, border 0.6s ease, z-index 0.6s ease; /*почему не работает анимация?*/
+    cursor: pointer;
     border-left: 1px solid white;
     border-right: 1px solid white;
+    transition: all 0.3s ease-in-out;//как сделать, чтобы работал?
 }
 
 .header {
@@ -86,6 +89,31 @@
         line-height: 23px;
         text-align: center;
         letter-spacing: 0.1px;
-      }
+      }    
+    }
+
+    .header__blue {
+      background-color: $deepBlue;
+    }
+    .main__blue {
+      background-color: $lightBlue;
+    }
     
+    .header__green {
+      background-color: $deepGreen;
+    }
+    .main__green {
+      background-color: $lightGreen;
+    }
+    .header__red {
+      background-color: $deepRed;
+    }
+    .main__red {
+      background-color: $lightRed;
+    }
+    .header__black {
+      background-color: $deepBlack;
+    }
+    .main__black {
+      background-color: $lightBlack;
     }
